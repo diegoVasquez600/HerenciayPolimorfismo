@@ -8,10 +8,10 @@ namespace HerenciayPolimorfismo.Base
 {
     public abstract class Persona
     {
-        protected string Nombre { get; set; } = null!;
-        protected string Apellidos { get; set; } = null!;
-        protected string Identificacion { get; set; } = null!;
-        protected string EstadoCivil { get; set; } = null!;
+        public string Nombre { get; set; }
+        public string Apellidos { get; set; } 
+        public string Identificacion { get; set; }
+        public string EstadoCivil { get; set; }
 
         public Persona(string Nombre, string Apellidos, string Identificacion, string EstadoCivil)
         {
@@ -21,9 +21,9 @@ namespace HerenciayPolimorfismo.Base
             this.EstadoCivil = EstadoCivil;
         }
 
-        public void CambioEstadoCivil() 
+        public virtual void CambioEstadoCivil() 
         {
-            
+            MessageBox.Show($"Es estado Civil Actual es {EstadoCivil}, ¿Deseas Cambiarlo?");
         }
 
     }
