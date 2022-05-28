@@ -15,9 +15,19 @@ namespace HerenciayPolimorfismo.Classes
             Labor = labor;
         }
 
-        public void ModificarLabor()
+        public void ModificarLabor(string labor)
         {
-
+            Labor = labor;
+            MessageBox.Show($"La labor de {Nombre} cambió por {Labor}");
         }
+
+        public override void CambioEstadoCivil()
+        {
+            base.CambioEstadoCivil();
+            EstadoCivil = "Casado";
+            MessageBox.Show($"El estado Civil de {Nombre} cambio por {EstadoCivil}");
+        }
+
+
     }
 }

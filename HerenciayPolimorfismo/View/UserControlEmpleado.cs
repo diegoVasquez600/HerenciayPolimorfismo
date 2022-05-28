@@ -46,7 +46,6 @@ namespace HerenciayPolimorfismo.View
         private void ButtonEstadoCivil_Click(object sender, EventArgs e)
         {
             empleado.CambioEstadoCivil();
-            CargarLabel();
         }
 
         private void ButtonEstadoCivil_Click_1(object sender, EventArgs e)

@@ -69,6 +69,7 @@
             this.buttonServicio.TabIndex = 5;
             this.buttonServicio.Text = "Servicio";
             this.buttonServicio.UseVisualStyleBackColor = false;
+            this.buttonServicio.Click += new System.EventHandler(this.ButtonServicio_Click);
             // 
             // pictureBox1
             // 
@@ -95,6 +96,7 @@
             this.buttonProfesor.TabIndex = 3;
             this.buttonProfesor.Text = "Profesor";
             this.buttonProfesor.UseVisualStyleBackColor = false;
+            this.buttonProfesor.Click += new System.EventHandler(this.ButtonProfesor_Click);
             // 
             // buttonEstudiante
             // 
@@ -110,6 +112,7 @@
             this.buttonEstudiante.TabIndex = 2;
             this.buttonEstudiante.Text = "Estudiante";
             this.buttonEstudiante.UseVisualStyleBackColor = false;
+            this.buttonEstudiante.Click += new System.EventHandler(this.ButtonEstudiante_Click);
             // 
             // buttonEmpleado
             // 
