@@ -25,7 +25,7 @@ namespace HerenciayPolimorfismo.View
             CargarLabel();
         }
 
-        private void buttonEstadoCivil_Click(object sender, EventArgs e)
+        private void ButtonEstadoCivil_Click(object sender, EventArgs e)
         {
             CambiarEstadoCivil();
         }

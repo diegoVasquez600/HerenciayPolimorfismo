@@ -73,7 +73,7 @@
             this.buttonEstadoCivil.TabIndex = 7;
             this.buttonEstadoCivil.Text = "Cambiar Estado Civil";
             this.buttonEstadoCivil.UseVisualStyleBackColor = true;
-            this.buttonEstadoCivil.Click += new System.EventHandler(this.buttonEstadoCivil_Click);
+            this.buttonEstadoCivil.Click += new System.EventHandler(this.ButtonEstadoCivil_Click);
             // 
             // UserControlAdministrativo
             // 
