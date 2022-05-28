@@ -13,7 +13,7 @@ namespace HerenciayPolimorfismo.View
 {
     public partial class UserControlAdministrativo : UserControl
     {
-        readonly Administrativo administrativo;
+        private readonly Administrativo administrativo;
         public UserControlAdministrativo()
         {
             InitializeComponent();
@@ -32,14 +32,30 @@ namespace HerenciayPolimorfismo.View
 
         private void CambiarEstadoCivil()
         {
-            administrativo.EstadoCivil = "Casado";
             administrativo.CambioEstadoCivil();
             CargarLabel();
         }
 
+        private void CambiarDependencia()
+        {
+            if (textBoxDependencia.Text == string.Empty)
+                MessageBox.Show("Debes Ingresar una nueva Dependencia");
+            else
+            {
+                administrativo.ModificarDependencia(textBoxDependencia.Text);
+                CargarLabel();
+                textBoxDependencia.Text = string.Empty;
+            }
+        }
+
         private void CargarLabel()
         {
-            labelAdministrativo.Text = $"{administrativo.Nombre} {administrativo.Apellidos}\nIdentficacion: {administrativo.Identificacion}\nEstado Civil: {administrativo.EstadoCivil}";
+            labelAdministrativo.Text = $"{administrativo.Nombre} {administrativo.Apellidos}\nDependencia: {administrativo.Dependencia}\nIdentficacion: {administrativo.Identificacion}\nEstado Civil: {administrativo.EstadoCivil}";
+        }
+
+        private void ButtonDependencia_Click(object sender, EventArgs e)
+        {
+            CambiarDependencia();
         }
     }
 }

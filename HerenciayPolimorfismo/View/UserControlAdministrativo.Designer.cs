@@ -28,18 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelAdministrativo = new System.Windows.Forms.Label();
             this.buttonEstadoCivil = new System.Windows.Forms.Button();
+            this.buttonDependencia = new System.Windows.Forms.Button();
+            this.textBoxDependencia = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 5;
             // 
             // label2
             // 
@@ -54,12 +49,12 @@
             this.label2.Text = "Administrativo";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelAdminnitrativo
+            // labelAdministrativo
             // 
             this.labelAdministrativo.AutoSize = true;
             this.labelAdministrativo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelAdministrativo.Location = new System.Drawing.Point(83, 146);
-            this.labelAdministrativo.Name = "labelAdminnitrativo";
+            this.labelAdministrativo.Name = "labelAdministrativo";
             this.labelAdministrativo.Size = new System.Drawing.Size(0, 21);
             this.labelAdministrativo.TabIndex = 6;
             // 
@@ -67,7 +62,7 @@
             // 
             this.buttonEstadoCivil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEstadoCivil.Location = new System.Drawing.Point(197, 317);
+            this.buttonEstadoCivil.Location = new System.Drawing.Point(194, 338);
             this.buttonEstadoCivil.Name = "buttonEstadoCivil";
             this.buttonEstadoCivil.Size = new System.Drawing.Size(184, 23);
             this.buttonEstadoCivil.TabIndex = 7;
@@ -75,15 +70,45 @@
             this.buttonEstadoCivil.UseVisualStyleBackColor = true;
             this.buttonEstadoCivil.Click += new System.EventHandler(this.ButtonEstadoCivil_Click);
             // 
+            // buttonDependencia
+            // 
+            this.buttonDependencia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDependencia.Location = new System.Drawing.Point(194, 309);
+            this.buttonDependencia.Name = "buttonDependencia";
+            this.buttonDependencia.Size = new System.Drawing.Size(184, 23);
+            this.buttonDependencia.TabIndex = 8;
+            this.buttonDependencia.Text = "Cambiar Dependencia";
+            this.buttonDependencia.UseVisualStyleBackColor = true;
+            this.buttonDependencia.Click += new System.EventHandler(this.ButtonDependencia_Click);
+            // 
+            // textBoxDependencia
+            // 
+            this.textBoxDependencia.Location = new System.Drawing.Point(194, 280);
+            this.textBoxDependencia.Name = "textBoxDependencia";
+            this.textBoxDependencia.Size = new System.Drawing.Size(184, 23);
+            this.textBoxDependencia.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(194, 262);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 15);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Nueva Dependencia";
+            // 
             // UserControlAdministrativo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxDependencia);
+            this.Controls.Add(this.buttonDependencia);
             this.Controls.Add(this.buttonEstadoCivil);
             this.Controls.Add(this.labelAdministrativo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "UserControlAdministrativo";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Size = new System.Drawing.Size(569, 430);
@@ -94,9 +119,11 @@
         }
 
         #endregion
-        private Label label1;
         private Label label2;
         private Label labelAdministrativo;
         private Button buttonEstadoCivil;
+        private Button buttonDependencia;
+        private TextBox textBoxDependencia;
+        private Label label1;
     }
 }

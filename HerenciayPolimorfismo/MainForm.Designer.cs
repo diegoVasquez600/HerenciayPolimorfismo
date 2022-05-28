@@ -125,6 +125,7 @@
             this.buttonEmpleado.TabIndex = 1;
             this.buttonEmpleado.Text = "Empleado";
             this.buttonEmpleado.UseVisualStyleBackColor = false;
+            this.buttonEmpleado.Click += new System.EventHandler(this.buttonEmpleado_Click);
             // 
             // buttonAdminitrativo
             // 

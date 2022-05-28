@@ -9,7 +9,7 @@ namespace HerenciayPolimorfismo.Classes
 {
     public class Profesor : Persona
     {
-        private string Facultad { get; set; }
+        public string Facultad { get; set; }
 
         public Profesor(string Nombre, string Apellidos, string Identificacion, string EstadoCivil, string Facultad) : base(Nombre, Apellidos, Identificacion, EstadoCivil)
         {

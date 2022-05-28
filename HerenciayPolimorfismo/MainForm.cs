@@ -12,7 +12,20 @@ namespace HerenciayPolimorfismo
         private void buttonAdminitrativo_Click(object sender, EventArgs e)
         {
             UserControlAdministrativo administrativo = new();
-            mainPanel.Controls.Add(administrativo);
+            CargarUserControl(administrativo);
+        }
+
+        private void buttonEmpleado_Click(object sender, EventArgs e)
+        {
+            UserControlEmpleado empleado = new();
+            CargarUserControl(empleado);
+        }
+
+
+        private void CargarUserControl(UserControl userControl)
+        {
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(userControl);
         }
     }
 }
